@@ -1,9 +1,14 @@
 $(document).ready(function() {
-    var name = prompt("Please enter your name:");
-    if (!name) {
-        $('body').html('<h1>Please enter a valid name.</h1>')
+    var user = prompt("Please enter your name:");
+    if (!user) {
+        $('#middle').html('<h1>Please enter a valid name.</h1>')
     } else {
         var socket = io.connect();
-        socket.emit('user_login', { name:name });
+
+        socket.emit('user_login', { name:user });
+        socket.on('confirm_login', function(data) { user=data.user; });
+        if (user == "MODERATOR") {
+            // jquery to add form to page
+        }
     }
 })
