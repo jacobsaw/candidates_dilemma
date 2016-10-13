@@ -77,4 +77,24 @@ p{
 .centered{
 	text-align: center;
 }
+.select_candidates{
+	text-align: center;
+	padding-top: 50px;
+	height: 500px;
+}
+.select_candidates h1 {
+	color: darkblue;
+}
+.select_candidates h3 {
+	margin: 10px;
+}
+.select_candidates select {
+	width: 200px;
+	margin: 10px;
+}
+.select_candidates input {
+	padding: 20px;
+	margin-top: 200px;
+}
+
 
