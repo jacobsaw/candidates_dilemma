@@ -4,7 +4,7 @@
 	font-family: sans-serif;
 }
 body{
-	background-image: url('flag.jpg');
+	background-image: url('/images/flag.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
