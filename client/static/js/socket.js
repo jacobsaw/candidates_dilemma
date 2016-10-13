@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var user = prompt("Please enter your name:");
     if (!user) {
-        $('#middle').html('<h1>Please enter a valid name.</h1>')
+        $('#middle_div').html('<h1>Please enter a valid name.</h1>')
     } else {
         var socket = io.connect();
 
