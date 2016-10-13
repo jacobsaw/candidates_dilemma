@@ -9,7 +9,7 @@ module.exports = function(server) {
         var user;
         socket.on('user_login', function(data) {
             if (data.name == "MODERATOR") {
-                // socket.broadcast.emit('moderator_login');
+                socket.emit('update_candidates', {candidates:current_candidates});
                 return;
             }
             Candidate.findOne({name:data.name}, function(err, candidate) {
@@ -25,6 +25,7 @@ module.exports = function(server) {
                 }
                 current_candidates.push(data.name);
                 socket.emit('confirm_login', {user:user});
+                socket.broadcast.emit('update_candidates', {candidates:current_candidates});
             });
         });
     });
