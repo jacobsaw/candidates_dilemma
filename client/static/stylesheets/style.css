@@ -1,0 +1,84 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+body{
+	background-image: url('flag.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#wrapper{
+
+}	
+#title{
+	background-color: navy;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 1px solid darkblue;
+}
+#left_div{
+	border-radius: 5px;
+	vertical-align: top;
+	display: inline-block;
+	width: 10%;
+	min-width: 100px;
+	min-height: 800px;
+	height: 100%;
+	margin: 10px;
+	padding: 10px;
+	background-color: #dc2d2d;
+	color: white;
+}
+#main_content{
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	height: 800px;
+	min-width: 300px;
+	width: 80%;
+	margin: 10px;
+	padding: 10px;
+}
+#middle_div{
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: white;
+}
+#bottom_div{
+	border-radius: 5px;
+	margin: 10px auto;
+	background-color: white;
+	padding: 20px;
+}
+h1{
+	text-align: center;
+}
+p{
+	margin: 5px;
+}
+.debating{
+	text-align: center;
+}
+.debating div{
+	display: inline-block;
+	vertical-align: top;
+}
+.debating div button{
+	display: inline-block;
+	vertical-align: top;
+	height: 100px;
+	width: 100px;
+	margin: 50px;
+	font-size: 50px;
+}
+
+.centered{
+	text-align: center;
+}
+.inline{
+	display: inline-block;
+	vertical-align: center;
+}
