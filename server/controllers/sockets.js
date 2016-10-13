@@ -28,4 +28,25 @@ module.exports = function(server) {
             });
         });
     });
+    var players = []
+        socket.on('game_start'), function(data) {
+            if(data.players[0]==user.name){
+                players[0]=user.name;
+            }
+            if(data.players[1]==user.name){
+                players[1]=user.name;
+            }
+        }
+        var choices = [true, true];
+        socket.on('user_choice'), function(data) {
+            choices[data.player] = data.choice;
+        }
+        socket.on('game_end'), function(data){
+            if(data.player){
+                if(choices[data.player])
+            }
+            else{
+
+            }
+        }
 }

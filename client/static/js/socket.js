@@ -11,4 +11,7 @@ $(document).ready(function() {
             // jquery to add form to page
         }
     }
+    $('body').on('click', '.positive', function(event){
+        socket.emit('user_choice', {choice:'positive'})
+    });
 })
