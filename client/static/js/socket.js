@@ -16,8 +16,8 @@ $(document).ready(function() {
                 for (var i=0; i<candidates.length; i++) {
                     options += '<option value="' + candidates[i] + '">' + candidates[i] + '</option>';
                 }
-                var select_html = '<div class="select_candidates"><h3>Choose Players:</h3><form><select name="player1">';
-                select_html += options + '</select><select name="player2">' + options + '</select><button id="start">Start Debate!</button></form></div>'
+                var select_html = '<div class="select_candidates"><h3>Choose Players:</h3><select name="player1">';
+                select_html += options + '</select><select name="player2">' + options + '</select><button id="start">Start Debate!</button></div>'
                 $('#middle_div').html(select_html)
             });
             // Moderator initiates debate between selected candidates

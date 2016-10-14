@@ -96,6 +96,6 @@ module.exports = function(server) {
                 }
                 socket.broadcast.emit('update_candidates', {candidates:current_candidates});
             }
-        })
+        });
     });
 }
