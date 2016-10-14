@@ -39,19 +39,15 @@ body{
 	min-width: 300px;
 	width: 80%;
 	margin: 10px;
-	padding: 10px;
 }
 #middle_div{
 	border-radius: 5px;
 	padding: 10px;
-	margin: 10px auto;
+	margin: 0px auto;
 	background-color: white;
 }
 #bottom_div{
-	border-radius: 5px;
 	margin: 10px auto;
-	background-color: white;
-	padding: 20px;
 }
 h1{
 	text-align: center;
@@ -61,6 +57,9 @@ p{
 }
 .debating{
 	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	padding-top: 20px;
 }
 .debating div{
 	display: inline-block;
@@ -77,4 +76,24 @@ p{
 .centered{
 	text-align: center;
 }
+.select_candidates{
+	text-align: center;
+	padding-top: 50px;
+	height: 500px;
+}
+.select_candidates h1 {
+	color: darkblue;
+}
+.select_candidates h3 {
+	margin: 10px;
+}
+.select_candidates select {
+	width: 200px;
+	margin: 10px;
+}
+.select_candidates input {
+	padding: 20px;
+	margin-top: 200px;
+}
+
 
