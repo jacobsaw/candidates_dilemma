@@ -11,4 +11,32 @@ $(document).ready(function() {
             // jquery to add form to page
         }
     }
+    var player_index;
+    socket.on('players_joined', function(data){
+        if(data.players[0]==user.name){
+            player_index=0;
+        }
+        else if{
+            player_index=1;
+        }
+        // change the html if you are selected
+    }
+    $('body').on('click', '.positive', function(event){
+        choice={
+            player:player_index,
+            choice:true
+        }
+        socket.emit('user_choice', choice);
+    });
+    $('body').on('click', '.negative', function(event){
+        choice={
+            player:player_index,
+            choice:false
+        }
+        socket.emit('user_choice', choice);
+    });
+    socket.on('game_end', function(data){
+        console.log('ended');
+        // google api chart will go here
+    }
 })
