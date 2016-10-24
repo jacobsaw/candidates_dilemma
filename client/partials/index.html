@@ -1,0 +1,42 @@
+<div id="wrapper">
+    <h1 id="title">The Great Debate</h1>
+    <div id="left_div">
+        <h3 class="centered">Candidates</h3>
+        <p>Marco</p>
+        <p>Adam</p>
+        <p>Phil</p>
+    </div>
+    <div id="main_content">
+        <div id="middle_div">
+<!--                     <h3 class="centered">Rules:</h3>
+            <p>Good evening from Coding Dojo University in scenic McLean, Virginia.  I'm "the Moderator" and I would like to welcome to you to the first presidential debate.</p>
+            <p>The participants tonight are {{ candidate.name }} and Candidate 2.  This is an all or nothing debate in which the candidates will each have 30 seconds to respond.  Candidates should note that their responses will have a direct impact on the number of decided voters that support them.</p> -->
+            <div class="select_candidates">
+                <h1>Welcome Moderator</h1>
+                <h3>Select two candidates for the dabate</h3>
+                <form action="/start" method="post">
+                    <select name="player1">
+                        <option>Marco</option>
+                        <option>Phil</option>
+                        <option>Adam</option>
+                    </select>
+                    <select name="player2">
+                        <option>Marco</option>
+                        <option>Phil</option>
+                        <option>Adam</option>
+                    </select>
+                    <p><input type="submit" value="Start Debate"></p>
+                </form>
+            </div>
+        </div>
+        <div id="bottom_div">
+<!--                     <div class="debating">
+                <h3>What is your answer?</h3>
+                <div>
+                    <button id="positive">+</button>
+                    <button id="negative">-</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
