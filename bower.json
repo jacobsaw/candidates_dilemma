@@ -1,0 +1,22 @@
+{
+  "name": "candidates_dilemma",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Phil Boothe <pfb3cn@virginia.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pfb3cn/candidates_dilemma",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "jquery": "^3.1.1"
+  }
+}

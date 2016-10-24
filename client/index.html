@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/stylesheets/style.css" />
+        <title>Candilemmapocalypse</title>
+        <!-- Load libraries from bower and npm -->
+        <script type="text/javascript" src="angular/angular.min.js"></script>
+        <script type="text/javascript" src="angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="socket.io/socket.io.js"></script>
+        <!-- Load local files -->
+        <script type="text/javascript" src="static/js/socket.js"></script>
+        <script type="text/javascript" src="assets/app.js"></script>
+        <script type="text/javascript" src="assets/factories/candidateFactory.js"></script>
+        <script type="text/javascript" src="assets/controllers/indexController.js"></script>
+    </head>
+    <body>
+        <div ng-view="">
+        </div>
+    </body>
+</html>
