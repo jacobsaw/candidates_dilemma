@@ -14,11 +14,11 @@ is better if one or both candidates choose to stay positive.
 Our goal is to measure how users' decisions change over time.
 
 ### How's it Made?
-Back End: Node.js, Express, Socket.io
-Front End: AngularJS
-Database: MongoDB
+* Back End: Node.js, Express, Socket.io
+* Front End: AngularJS
+* Database: MongoDB
 
 ### Who Made it?
-Adam J
-Phil B
-Marco M
+* Adam J
+* Phil B
+* Marco M

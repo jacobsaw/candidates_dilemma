@@ -1,4 +1,4 @@
-app.controller('indexController', ['$scope', 'candidateFactory', 'socketFactory', function($scope, candidateFactory, socketFactory) {
+app.controller('modController', ['$scope', 'candidateFactory', 'socketFactory', function($scope, candidateFactory, socketFactory) {
     $scope.candidates = [];
 
     function getCandidates() {
