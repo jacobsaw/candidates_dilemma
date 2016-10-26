@@ -6,7 +6,7 @@ var models_path = path.join(__dirname, './../models');
 mongoose.connect('mongodb://localhost/GreatDebate');
 
 mongoose.connection.on('connected', function() {
-    console.log('Mongoose default connection open to /mean');
+    console.log('Mongoose default connection open to /GreatDebate');
 });
 mongoose.connection.on('error', function(err) {
     console.error('Mongoose connection error: ' + err);

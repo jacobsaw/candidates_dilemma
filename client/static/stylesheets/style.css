@@ -4,13 +4,13 @@
 	font-family: sans-serif;
 }
 body{
-	background-image: url('/images/flag.jpg');
+	background-image: url('/static/images/flag.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 #wrapper{
 
-}	
+}
 #title{
 	background-color: navy;
 	color: white;
@@ -95,5 +95,3 @@ p{
 	padding: 20px;
 	margin-top: 200px;
 }
-
-

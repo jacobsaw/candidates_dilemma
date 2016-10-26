@@ -14,9 +14,15 @@
         <script type="text/javascript" src="assets/app.js"></script>
         <script type="text/javascript" src="assets/factories/candidateFactory.js"></script>
         <script type="text/javascript" src="assets/controllers/indexController.js"></script>
+        <script type="text/javascript" src="assets/controllers/modController.js"></script>
+        <script type="text/javascript" src="assets/controllers/debateController.js"></script>
+        <script type="text/javascript" src="assets/controllers/resultController.js"></script>
     </head>
     <body>
-        <div ng-view="">
+        <div id="wrapper">
+            <h1 id="title">The Great Debate</h1>
+            <div ng-view="">
+            </div>
         </div>
     </body>
 </html>
