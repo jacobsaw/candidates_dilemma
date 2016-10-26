@@ -1,4 +1,4 @@
-app.controller('indexController', ['$scope', 'candidateFactory', function($scope, candidateFactory) {
+app.controller('indexController', ['$scope', 'candidateFactory', 'socketFactory', function($scope, candidateFactory, socketFactory) {
     $scope.candidates = [];
 
     function getCandidates() {
@@ -6,5 +6,7 @@ app.controller('indexController', ['$scope', 'candidateFactory', function($scope
             $scope.candidates = data;
         });
     }
-    getCandidates();
+
+    socketFactory.init();
+    // getCandidates();
 }])

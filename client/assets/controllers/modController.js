@@ -1,4 +1,4 @@
-app.controller('modController', ['$scope', 'candidateFactory', function($scope, candidateFactory) {
+app.controller('modController', ['$scope', 'candidateFactory', 'socketFactory', function($scope, candidateFactory, socketFactory) {
     $scope.candidates = [];
 
     function getCandidates() {
@@ -6,5 +6,7 @@ app.controller('modController', ['$scope', 'candidateFactory', function($scope, 
             $scope.candidates = data;
         });
     }
-    getCandidates();
+
+    socketFactory.init();
+    // getCandidates();
 }])

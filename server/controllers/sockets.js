@@ -7,6 +7,7 @@ module.exports = function(server) {
     var debate = {};
 
     io.sockets.on('connection', function(socket) {
+        console.log('connection initiated!')
         var user;
         // Find/create candidate when user opens connection
         socket.on('user_login', function(data) {
@@ -89,13 +90,14 @@ module.exports = function(server) {
             }
         });
         socket.on('disconnect', function() {
-            for (var i=0; i<current_candidates.length; i++) {
-                if (current_candidates[i] == user.name) {
-                    current_candidates.splice(i);
-                    return;
-                }
-                socket.broadcast.emit('update_candidates', {candidates:current_candidates});
-            }
+            console.log('user logged off')
+            // for (var i=0; i<current_candidates.length; i++) {
+            //     if (current_candidates[i] == user.name) {
+            //         current_candidates.splice(i);
+            //         return;
+            //     }
+            //     socket.broadcast.emit('update_candidates', {candidates:current_candidates});
+            // }
         });
     });
 }

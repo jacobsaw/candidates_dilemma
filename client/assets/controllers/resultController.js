@@ -6,5 +6,5 @@ app.controller('resultController', ['$scope', 'candidateFactory', function($scop
             $scope.candidates = data;
         });
     }
-    getCandidates();
+    // getCandidates();
 }])
